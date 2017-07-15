@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-add-department (departmentAdded)="handleDepartmentAdded($event)"></app-add-department>
+      <hr>
+      <app-add-employee [allDepartments]="allDepartments" (employeeAdded)="handleEmployeeAdded($event)" *ngIf="allDepartments?.length > 0"></app-add-employee>
+    </div>
+    <div class="col-md-6">
+      <app-all-departments [allDepartments]="allDepartments" *ngIf="allDepartments?.length > 0">
+      </app-all-departments>
+      <hr *ngIf="allDepartments?.length > 0">
+      <app-all-employees [allEmployees]="allEmployees" *ngIf="allEmployees?.length > 0">
+      </app-all-employees>
+    </div>
+  </div>
+</div>

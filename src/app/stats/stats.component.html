@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <h4>Departments stats</h4>
+        <table class="table table-hover" *ngIf="stats?.length>0">
+          <thead>
+            <tr>
+              <th>Department name</th>
+              <th>Employees count</th>
+              <th>Average salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let stat of stats">
+              <td>{{stat.departmentName}}</td>
+              <td>{{stat.employeesCount}}</td>
+              <td>{{stat.averageSalary}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div *ngIf="stats?.length==0">No stats available :(</div>
+      </div>
+    </div>
+  </div>
+</div>

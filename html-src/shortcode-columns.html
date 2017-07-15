@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>ReactJS phone book</title>
+
+	<!-- WEB FONTS : use %7C instead of | (pipe) -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
+	 rel="stylesheet" type="text/css" />
+
+	<!-- CORE CSS -->
+	<link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- THEME CSS -->
+	<link href="styles/essentials.css" rel="stylesheet" type="text/css" />
+	<link href="styles/layout.css" rel="stylesheet" type="text/css" />
+
+	<!-- PAGE LEVEL SCRIPTS -->
+	<link href="styles/header-1.css" rel="stylesheet" type="text/css" />
+	<link href="styles/orange.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+</head>
+
+
+<body>
+
+	<div id="header" class="sticky clearfix">
+		<header id="topNav">
+			<div class="container">
+				<!-- Mobile Menu Button -->
+				<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+				</button>
+				<!-- Logo -->
+				<a class="logo pull-left scrollTo" href="#top">
+					<img src="Orange-logo.png" alt="" />
+				</a>
+			</div>
+		</header>
+	</div>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading panel-heading-transparent">
+							<h2 class="panel-title bold">Add department</h2>
+						</div>
+						<div class="panel-body">
+							<form>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-md-12">
+											<label for="contact:name">Deparment name:</label>
+											<input required="" type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<br />
+										<button class="btn btn-primary"><i class="fa fa-check"></i> Add department</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="table-responsive">
+						<h4>All departments</h4>
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Department id</th>
+									<th>Department name</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Value 1</td>
+									<td>Value 2</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+
+
+				<div class="col-md-6">
+
+					<div class="panel panel-default">
+						<div class="panel-heading panel-heading-transparent">
+							<h2 class="panel-title bold">Add employee</h2>
+						</div>
+						<div class="panel-body">
+							<form>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-md-12">
+											<label for="contact:name">Name</label>
+											<input required="" type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<label for="contact:phone">Department</label>
+											<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<label for="contact:phone">Salary</label>
+											<input type="mail" value="" class="form-control" name="contact[phone]" id="contact:phone">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<br />
+										<button class="btn btn-primary"><i class="fa fa-check"></i> Add employee</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="table-responsive">
+						<h4>All Employee</h4>
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Employee id</th>
+									<th>name</th>
+									<th>department name</th>
+									<th>salary</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Value 1</td>
+									<td>Value 2</td>
+									<td>Value 3</td>
+									<td>Value 3</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="copyright">
+			<div class="container">
+				© جميع الحقوق محفوظة.
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
